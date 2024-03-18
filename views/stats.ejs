@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+<body>
+<%- include('partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+    <h1>Statistics</h1>
+    <canvas id="pomodoroSessionsChart" width="400" height="400"></canvas>
+    <canvas id="averageDurationChart" width="400" height="400"></canvas>
+</main>
+<%- include('partials/_footer.ejs') %>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="/js/stats.js"></script>
+</body>
+</html>

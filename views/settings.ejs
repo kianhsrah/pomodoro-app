@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+<body>
+<%- include('partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+    <h1>Settings</h1>
+    <form id="settingsForm">
+        <div class="mb-3">
+            <label for="pomodoroDuration" class="form-label">Pomodoro Duration (minutes)</label>
+            <input type="number" class="form-control" id="pomodoroDuration" name="pomodoroDuration" required min="1">
+        </div>
+        <div class="mb-3">
+            <label for="breakDuration" class="form-label">Break Duration (minutes)</label>
+            <input type="number" class="form-control" id="breakDuration" name="breakDuration" required min="1">
+        </div>
+        <div class="mb-3">
+            <label for="soundNotifications">Sound Notifications</label>
+            <input type="checkbox" id="soundNotifications" name="notificationPreferences.sound">
+            <label for="visualNotifications">Visual Notifications</label>
+            <input type="checkbox" id="visualNotifications" name="notificationPreferences.visual">
+        </div>
+        <button type="submit" class="btn btn-primary">Save Settings</button>
+    </form>
+</main>
+<%- include('partials/_footer.ejs') %>
+<script src="/js/settingsOperations.js"></script>
+</body>
+</html>

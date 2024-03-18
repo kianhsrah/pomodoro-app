@@ -1,0 +1,6 @@
+/* Custom styles for the Pomodoro App */
+
+#timerDisplay {
+  font-size: 48px;
+  font-weight: bold;
+}

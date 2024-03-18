@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+<body>
+<%- include('partials/_header.ejs') %>
+<main role="main" class="container mt-4">
+    <h1>Tasks</h1>
+    <form id="taskForm">
+        <div class="mb-3">
+            <label for="taskDescription" class="form-label">Task Description</label>
+            <input type="text" class="form-control" id="taskDescription" name="description" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Add Task</button>
+    </form>
+    <hr>
+    <h2>Your Tasks</h2>
+    <ul id="taskList" class="list-group mt-3"></ul>
+</main>
+<%- include('partials/_footer.ejs') %>
+<script src="/js/taskOperations.js"></script>
+</body>
+</html>

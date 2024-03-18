@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/_head.ejs') %>
+  <body>
+<%- include('partials/_header.ejs') %>
+    <main role="main" class="container mt-4">
+      <h1>Timer</h1>
+      <div id="timerDisplay" class="text-center my-3">25:00</div>
+      <div class="text-center">
+        <button id="startTimer" class="btn btn-success">Start</button>
+        <button id="pauseTimer" class="btn btn-warning" disabled>Pause</button>
+        <button id="stopTimer" class="btn btn-danger" disabled>Stop</button>
+      </div>
+    </main>
+<%- include('partials/_footer.ejs') %>
+  <script src="/js/timer.js"></script>
+</html>
